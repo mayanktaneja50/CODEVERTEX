@@ -1,0 +1,245 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  color: #333;
+}
+
+h2.section-title {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  position: relative;
+}
+
+h2.section-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #2575fc;
+  margin: 0.5rem auto;
+}
+
+/* Header */
+header {
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  animation: fadeIn 2s ease-in;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 20px #fff;
+}
+
+.hero-text p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.explore-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: white;
+  color: #2575fc;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.explore-btn:hover {
+  background-color: #6a11cb;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 1.5s ease-out;
+}
+
+/* About Section */
+#about {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  background: url('Assets/Portfolio/profile.jpg') no-repeat center center/cover;
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+}
+
+.bio p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+#skills {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-item p {
+  margin-top: 1rem;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Buttons */
+.download-btn {
+  padding: 1rem 2rem;
+  background-color: #2575fc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #6a11cb;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Education Section */
+#education {
+  padding: 4rem 0;
+  background: #eaf0f1;
+}
+
+#education h2.section-title {
+  color: #4a90e2;
+}
+
+#education ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#education li {
+  background: #fff;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#education li strong {
+  color: #333;
+}
+
+/* Achievements Section */
+#achievements {
+  padding: 4rem 0;
+  background: #f3f4f6;
+}
+
+#achievements h2.section-title {
+  color: #4a90e2;
+}
+
+#achievements ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#achievements li {
+  background: #fff;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #333;
+}
+
+/* Interests & Hobbies Section */
+#interests {
+  padding: 4rem 0;
+  background: #fdfdfd;
+}
+
+#interests h2.section-title {
+  color: #4a90e2;
+}
+
+#interests ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#interests li {
+  background: #fff;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #333;
+}
+
